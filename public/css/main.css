@@ -57,7 +57,9 @@ main ul {
     margin: 1em;
     padding: 0em; }
     main ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: grey;
+      font-weight: 500; }
   main ul img {
     object-fit: contain;
     height: 100%;
@@ -72,7 +74,13 @@ nav li {
   background: #0c0b0e; }
 
 h1.categorie-product {
-  padding: 0.6em; }
+  padding: 0.6em;
+  position: relative;
+  display: block;
+  top: 0;
+  opacity: 1;
+  transition: 800ms ease-in-out;
+  animation: slide-in 800ms; }
 
 section.product {
   display: flex;
@@ -102,3 +110,11 @@ section.product {
     position: relative;
     text-align: right;
     width: 100%; }
+
+@keyframes slide-in {
+  0% {
+    top: 1em;
+    opacity: 0; }
+  100% {
+    top: 0em;
+    opacity: 1; } }
