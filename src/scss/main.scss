@@ -61,6 +61,12 @@ header {
 }
 
 main {
+    background: white;
+    position: relative;
+    border-radius: 1em 1em 0 0;
+    display: block;
+    top: -4em;
+    padding: 1em;
     ul {
         position: relative;
         display: flex;
@@ -113,6 +119,13 @@ h1.categorie-product {
     opacity: 1;
     transition: 800ms ease-in-out;
     animation: slide-in 800ms;
+    &:after {
+        content: "";
+        width: 100%;
+        position: relative;
+        display: block;
+        height: 3em;
+    }
 }
 
 //articles
@@ -123,12 +136,12 @@ section.product {
     align-items: center;
 
     article {
-        background: #f7f7f7;
         margin: 0.3em;
         border-radius: 0.1em;
         padding: 0.8em;
         height: 6em;
         width: 43%;
+        background: #f7f7f7;
         box-shadow: 6px 4px 0px 0px rgba(237, 237, 237, 1);
         display: flex;
         flex-wrap: wrap;
