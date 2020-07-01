@@ -1,0 +1,73 @@
+[{
+        "id": 1,
+        "naam": "Pepsi Cola",
+        "prijs": "2,60",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 2,
+        "naam": "Pepsi Max",
+        "prijs": "2,60",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 3,
+        "naam": "Lipton Ice Tea",
+        "prijs": "2,75",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 4,
+        "naam": "Lipton Ice Tea Green",
+        "prijs": "2,75",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 5,
+        "naam": "Sisi Sinas",
+        "prijs": "2,50",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 6,
+        "naam": "7-up",
+        "prijs": "2,50",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 7,
+        "naam": "Sourcy blauw",
+        "prijs": "2,50",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 8,
+        "naam": "Sourcy Rood",
+        "prijs": "2,50",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    },
+    {
+        "id": 9,
+        "naam": "Cassis Royal Club",
+        "prijs": "2,60",
+        "categorie": "Frisdrank",
+        "beschrijving": "",
+        "afbeelding": ""
+    }
+]

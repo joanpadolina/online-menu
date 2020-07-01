@@ -1,0 +1,20 @@
+{
+  "name": "online-menu",
+  "version": "1.0.0",
+  "description": "menukaart online bowling almere",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c --watch & node-sass --include-path scss src/scss/main.scss public/css/main.css -w"
+  },
+  "author": "Joan Padolina",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1",
+    "rollup": "^2.18.1"
+  }
+}
