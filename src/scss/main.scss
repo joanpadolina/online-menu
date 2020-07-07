@@ -40,12 +40,9 @@
 header {
     text-align: center;
     background: #1a1a1d;
-    color: #e72f5a;
-
-    section {
-        padding: .8em;
+    &.product-header{
+        margin-bottom: -5em;
     }
-
     div.header-img {
         height: 40vh;
         width: 100vw;
@@ -59,14 +56,30 @@ header {
 
 
 }
-
-main {
-    background: white;
-    position: relative;
-    border-radius: 1em 1em 0 0;
+section.intro-header {
+    color: #e72f5a;
+    padding: .8em;
+    position: absolute;
+    background: #212025;
     display: block;
-    top: -4em;
-    padding: 1em;
+    margin: auto;
+    width: 80%;
+    z-index: 1;
+    top: -3em;
+    border-radius: 0.4em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+main {
+    // background: #ffffff;
+    position: relative;
+    border-radius: 0.2em 0.2em 0 0;
+    display: block;
+    // top: -5em;
+    // padding: 1em;
     ul {
         position: relative;
         display: flex;
@@ -75,6 +88,7 @@ main {
         text-align: center;
         justify-content: space-around;
         align-items: center;
+        top:2em;
 
         li {
             height: 6em;
@@ -86,6 +100,9 @@ main {
                 text-decoration: none;
                 color: grey;
                 font-weight: 500;
+                &:hover > img{
+                    transform:rotate(5deg);
+                }
             }
 
         }
@@ -94,6 +111,8 @@ main {
             object-fit: contain;
             height: 100%;
             width: 100%;
+            transition:300ms ease-in-out;
+            transform:rotate(0deg);
         }
     }
 }
@@ -134,34 +153,41 @@ section.product {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    color: #e72f5a;
+    padding: .8em;
+    background: #212025;
+    display: block;
+    margin: auto;
+    border-radius: 0.7em 0.7em 0 0 ;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 
     article {
         margin: 0.3em;
-        border-radius: 0.1em;
         padding: 0.8em;
-        height: 6em;
-        width: 43%;
-        background: #f7f7f7;
-        box-shadow: 6px 4px 0px 0px rgba(237, 237, 237, 1);
+        height: 3em;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
 
     h2.product-name {
-        display: block;
-        width: 100%;
-        font-size: 1em;
-        margin-bottom: 0em;
+        display: inline-block;
+        width: 80%;
+        font-size: 1.2em;
     }
 
     p {
-        font-size: .8em;
+        font-size: 1em;
         color: #acacac;
         display: block;
         position: relative;
         text-align: right;
-        width: 100%;
+        width: 20%;
     }
 }
 
@@ -173,5 +199,14 @@ section.product {
     100%{
         top:0em;
         opacity: 1;
+    }
+}
+
+@keyframes icon-wiggle{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(4deg)
     }
 }
