@@ -92,7 +92,16 @@ main {
 
 nav a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
   color: gray; }
+  nav a svg {
+    width: 2em; }
+    nav a svg path {
+      fill: white; }
+  nav a:after {
+    content: "terug";
+    margin-left: 1em; }
 
 nav li {
   padding: 0.6em;
@@ -105,7 +114,8 @@ h1.categorie-product {
   top: 0;
   opacity: 1;
   transition: 800ms ease-in-out;
-  animation: slide-in 800ms; }
+  animation: slide-in 800ms;
+  color: white; }
   h1.categorie-product:after {
     content: "";
     width: 100%;
@@ -140,13 +150,13 @@ section.product {
   section.product h2.product-name {
     display: inline-block;
     width: 80%;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    text-align: left; }
   section.product p {
     font-size: 1em;
     color: #acacac;
     display: block;
     position: relative;
-    text-align: right;
     width: 20%; }
 
 @keyframes slide-in {

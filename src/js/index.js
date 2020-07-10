@@ -1,11 +1,15 @@
 import fetchProducts from './modules/fetchData'
 
-console.clear
+const dataFetch = async () => {
+    const product = await fetchProducts()
+    return product
+}
+
 // create articles for each product
 async function createDom() {
     const product = document.querySelector('.product')
     const categorieProduct = document.querySelector('.categorie-product').childNodes[0].nodeValue
-    const data = await fetchProducts()
+    const data = await dataFetch()
     const filteredData = data.filter(item => {
         if (categorieProduct == "Frisdranken") {
             return item.Submenu == "KOUDE DRANKEN"
@@ -19,9 +23,9 @@ async function createDom() {
         if (categorieProduct == "Bier") {
             return item.Submenu == "BIEREN"
         }
-        if(categorieProduct == "Warme dranken"){
+        if (categorieProduct == "Warme dranken") {
             return item.Submenu == "WARME DRANKEN"
-         }
+        }
 
     })
     const renderData = filteredData.forEach(item => {

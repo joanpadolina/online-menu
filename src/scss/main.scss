@@ -40,9 +40,11 @@
 header {
     text-align: center;
     background: #1a1a1d;
-    &.product-header{
+
+    &.product-header {
         margin-bottom: -5em;
     }
+
     div.header-img {
         height: 40vh;
         width: 100vw;
@@ -56,6 +58,7 @@ header {
 
 
 }
+
 section.intro-header {
     color: #e72f5a;
     padding: .8em;
@@ -73,11 +76,13 @@ section.intro-header {
     right: 0;
     text-align: center;
 }
+
 main {
     // background: #ffffff;
     position: relative;
     border-radius: 0.2em 0.2em 0 0;
     display: block;
+
     // top: -5em;
     // padding: 1em;
     ul {
@@ -88,7 +93,7 @@ main {
         text-align: center;
         justify-content: space-around;
         align-items: center;
-        top:2em;
+        top: 2em;
 
         li {
             height: 6em;
@@ -100,8 +105,9 @@ main {
                 text-decoration: none;
                 color: grey;
                 font-weight: 500;
-                &:hover > img{
-                    transform:rotate(5deg);
+
+                &:hover>img {
+                    transform: rotate(5deg);
                 }
             }
 
@@ -111,8 +117,8 @@ main {
             object-fit: contain;
             height: 100%;
             width: 100%;
-            transition:300ms ease-in-out;
-            transform:rotate(0deg);
+            transition: 300ms ease-in-out;
+            transform: rotate(0deg);
         }
     }
 }
@@ -121,7 +127,25 @@ main {
 nav {
     a {
         text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 2em;
+
+            path{
+                fill:white;
+
+            }
+        }
+
+
         color: gray;
+
+        &:after {
+            content: "terug";
+            margin-left:1em;
+        }
     }
 
     li {
@@ -134,10 +158,12 @@ h1.categorie-product {
     padding: 0.6em;
     position: relative;
     display: block;
-    top:0;
+    top: 0;
     opacity: 1;
     transition: 800ms ease-in-out;
     animation: slide-in 800ms;
+    color: white;
+
     &:after {
         content: "";
         width: 100%;
@@ -158,7 +184,7 @@ section.product {
     background: #212025;
     display: block;
     margin: auto;
-    border-radius: 0.7em 0.7em 0 0 ;
+    border-radius: 0.7em 0.7em 0 0;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -179,6 +205,7 @@ section.product {
         display: inline-block;
         width: 80%;
         font-size: 1.2em;
+        text-align: left;
     }
 
     p {
@@ -186,27 +213,28 @@ section.product {
         color: #acacac;
         display: block;
         position: relative;
-        text-align: right;
         width: 20%;
     }
 }
 
-@keyframes slide-in{
-    0%{
-        top:1em;
+@keyframes slide-in {
+    0% {
+        top: 1em;
         opacity: 0;
     }
-    100%{
-        top:0em;
+
+    100% {
+        top: 0em;
         opacity: 1;
     }
 }
 
-@keyframes icon-wiggle{
-    0%{
-        transform:rotate(0deg)
+@keyframes icon-wiggle {
+    0% {
+        transform: rotate(0deg)
     }
-    100%{
-        transform:rotate(4deg)
+
+    100% {
+        transform: rotate(4deg)
     }
 }
